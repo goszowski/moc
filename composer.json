@@ -16,6 +16,7 @@
         "laravel-notification-channels/turbosms": "^1.0",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
+        "marvinlabs/laravel-discord-logger": "^1.1",
         "overtrue/laravel-lang": "^4.2",
         "propaganistas/laravel-phone": "^4.3",
         "tymon/jwt-auth": "dev-develop"
