@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\{
     AuthController,
+    ProductsController,
 };
 
 /*
@@ -20,6 +21,16 @@ use App\Http\Controllers\{
 
 // Авторизація
 Route::group(['prefix'=>'auth', 'as'=>'auth.'], function() {
-    Route::post('/login', [AuthController::class, 'login'])->name('login');
-    Route::post('/register', [AuthController::class, 'register'])->name('register');
+    Route::post('login', [AuthController::class, 'login'])->name('login');
+    Route::post('register', [AuthController::class, 'register'])->name('register');
+});
+
+Route::group(['middleware'=>['auth:api']], function() {
+
+    // Продукти
+    Route::group(['prefix'=>'products', 'as'=>'products'], function() {
+
+        // Доступні продукти
+        Route::get('available', [ProductsController::class, 'available'])->name('available');
+    });
 });
