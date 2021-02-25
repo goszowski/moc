@@ -43,6 +43,7 @@ class RegisterRequest extends BaseRequest
             'phone' => [
                 'required',
                 'unique:customers',
+                'phone:UA',
             ],
 
             'password' => [

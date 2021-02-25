@@ -16,6 +16,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "overtrue/laravel-lang": "^4.2",
+        "propaganistas/laravel-phone": "^4.3",
         "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
