@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bc93342cb071aca6c5c9c3420762036",
+    "content-hash": "1dede32c7343ff94e4e07c51b066a24c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1122,6 +1122,63 @@
                 "source": "https://github.com/Laravel-Lang/lang/tree/7.0.9"
             },
             "time": "2020-11-30T20:35:41+00:00"
+        },
+        {
+            "name": "laravel-notification-channels/turbosms",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-notification-channels/turbosms.git",
+                "reference": "2b737b2b65b782ccc0a0a311c3c70fa3d9f274e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-notification-channels/turbosms/zipball/2b737b2b65b782ccc0a0a311c3c70fa3d9f274e3",
+                "reference": "2b737b2b65b782ccc0a0a311c3c70fa3d9f274e3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "illuminate/notifications": "~5.5 || ~6.0 || ~7.0 || ^8.0",
+                "illuminate/support": "~5.5 || ~6.0 || ~7.0 || ^8.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NotificationChannels\\TurboSMS\\TurboSMSServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NotificationChannels\\TurboSMS\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitalii Goncharov",
+                    "email": "1c.audit@gmail.com",
+                    "homepage": "https://github.com/gvital3230",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Turbosms notification channel for Laravel",
+            "homepage": "http://laravel-notification-channels.com/",
+            "support": {
+                "issues": "https://github.com/laravel-notification-channels/turbosms/issues",
+                "source": "https://github.com/laravel-notification-channels/turbosms/tree/1.0.3"
+            },
+            "time": "2020-09-21T17:42:22+00:00"
         },
         {
             "name": "laravel/framework",

@@ -62,4 +62,9 @@ class Customer extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function routeNotificationForTurboSMS()
+    {
+        return $this->phone;
+    }
 }

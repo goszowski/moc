@@ -13,6 +13,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "goldspecdigital/laravel-eloquent-uuid": "^8.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "laravel-notification-channels/turbosms": "^1.0",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "overtrue/laravel-lang": "^4.2",
