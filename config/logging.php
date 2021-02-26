@@ -106,6 +106,10 @@ return [
             'level'  => 'debug',
             'url'    => env('LOG_DISCORD_WEBHOOK_URL'),
         ],
+
+        'bugsnag' => [
+            'driver' => 'bugsnag',
+        ],
     ],
 
 ];
