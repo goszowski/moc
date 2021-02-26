@@ -28,14 +28,15 @@ class ProductsRepository extends BaseRepository implements ProductsRepositoryInt
 
     public function create(array $attributes) : Product
     {
-        $product = new $this->model;
+        // TODO
+        // $product = new $this->model;
 
-        $product->lastname = $attributes['name'];
-        $product->firstname = $attributes['is_active'] ?? false;
-        $product->patronymic = $attributes['is_archived'] ?? false;
+        // $product->lastname = $attributes['name'];
+        // $product->firstname = $attributes['is_active'] ?? false;
+        // $product->patronymic = $attributes['is_archived'] ?? false;
 
-        $product->save();
+        // $product->save();
 
-        return $product->fresh();
+        // return $product->fresh();
     }
 }

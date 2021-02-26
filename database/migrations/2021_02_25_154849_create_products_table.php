@@ -18,6 +18,12 @@ class CreateProductsTable extends Migration
             $table->string('name')->index();
             $table->boolean('is_active');
             $table->boolean('is_archived');
+            $table->decimal('min_sum', 8, 2);
+            $table->decimal('max_sum', 8, 2);
+            $table->unsignedTinyInteger('min_term');
+            $table->unsignedTinyInteger('max_term');
+            $table->decimal('percent_per_day', 4, 2);
+            $table->decimal('penalty_per_day', 4, 2);
             $table->timestamps();
         });
     }
